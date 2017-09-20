@@ -16,7 +16,7 @@ namespace WebAPIHelloWorld
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
+                routeTemplate: "api/{controller}/{action}/{id}",  //http://localhost:53867/api/Home
                 defaults: new { id = RouteParameter.Optional }
             );
         }
